@@ -5,6 +5,7 @@ on:
       - main
   pull_request:
     types: [opened, synchronize, reopened]
+  workflow_dispatch:     # manual run  
   # Trigger at 5:00 AM UTC on weekdays (Monday-Friday)
   schedule:
     - cron: '0 5 * * 1-5'
